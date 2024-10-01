@@ -1,0 +1,31 @@
+
+<html>
+    <head>
+        <title>API Test</title>
+        <style>
+            #map{
+                height: 700px;
+                width: 1000px;
+            }
+        </style>
+        <script src="./mapsAPI2(maxtest).js"></script>
+    </head>
+    <body>
+        <h1>
+            This is a test site
+        </h1>
+        <div id="map">
+        </div>
+        <div id="routing">
+            From:
+            <input id="fromloc" type="text">
+            (leave from blank if your current location verry inacurate rn)
+            <br>
+            To:
+            <input id ="toloc" type="text">
+            <br>
+            <button onclick="makeRoute()">Make Route</button>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGJcjTzr6nYuE4gxGTI3VTgCvuhptMcVs&callback=initMap&v=weekly"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </body>
